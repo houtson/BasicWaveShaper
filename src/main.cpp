@@ -42,7 +42,7 @@ void setup() {
   waveform.begin(1.0, 200.0, WAVEFORM_SINE);
 
 sgtl5000_1.enable(); // Enable the audio shield
-sgtl5000_1.volume(0.5);
+sgtl5000_1.volume(0.3);
 
 
 }
@@ -138,20 +138,3 @@ void loop() {
   }
   }
 }
-
-
-
-
-
-
-
-
-/*  Serial.print("Running:");
-  Serial.println(i++);
-  waveshape_effect.shape((float *)wave_shape_flat, 2);
-  delay (500);
-  waveshape_effect.shape((float *)wave_shape_chebyshev_3rd, 257);
-  delay(500);
-  waveshape_effect.shape((float *)wave_shape_chebyshev_6th, 257);
-  delay(500);
-  */
